@@ -52,7 +52,7 @@ class App extends React.Component {
               coffee-addict · jiu jitsuka<br />
               dog-lover &amp; trainer · vegan foodie<br />
               crazy plant-lady · home designer<br />
-              <a href="#" className="books small-caps">books · books · books →</a><br />
+              <a href="https://books.google.com/books?uid=115300439068107447274&as_coll=0&source=gbs_lp_bookshelf_list&hl=en&view_type=grid" className="books small-caps" target="_blank">books · books · books →</a><br />
               </div>
             </div>
           </section>
@@ -151,20 +151,19 @@ class App extends React.Component {
                   </div>
                   <div className="project-text">
                     <h3>Email Grid Generator</h3>
-                    <p className="project-url"><a href="http://gridgen-react.rvrita.com">gridgen-react.rvrita.com</a></p>
+                    <p className="project-url"><a href="http://gridgen-react.rvrita.com" target="_blank">gridgen-react.rvrita.com</a></p>
                     <p>A web-based tool to speed up email development at Sephora. It loads live product data with the Sephora Web API.</p>
                     <p className="small-caps"><span>Javascript</span> <span>React</span> <span>Node</span> <span>Express</span></p>
                   </div>
                 </div>
                 <div className="project project-left">
                   <div className="project-image">
-                    <img src="images/codebreakers.png" alt="codebreakers game" />
+                    <img src="images/blogrl.png" alt="Blogrl" />
                   </div>
                   <div className="project-text">
-                    <h3>Codebreakers</h3>
-                    <p className="project-url"><a href="http://www.playcodebreakers.com/">playcodebreakers.com</a></p>
-                    <p>A full-stack implementation of the popular game Codenames, with editable word lists and a hint tracker.</p>
-                    {/* <p>A handy way to keep track of bowling scores. Lorem ipsum dolor, could even help improve your bowling strategy. Know when to strike!</p> */}
+                    <h3>Blogrl.</h3>
+                    <p className="project-url"><a href="https://github.com/rvrita/blogrl" target="_blank">blogrl.me</a></p>
+                    <p>A fully-functioning blog written from the ground up with React, Express, and MongoDB. Supports content authoring and built-in visitor activity analytics.</p>
                     <p className="small-caps">Javascript React Node Express MySQL</p>
                   </div>
                 </div>
@@ -174,7 +173,7 @@ class App extends React.Component {
                   </div>
                   <div className="project-text">
                     <h3>Etsy Clone</h3>
-                    <p className="project-url"><a href="https://github.com/FEC-Linka/rvrita-etsy-reviews">github link</a></p>
+                    <p className="project-url"><a href="https://github.com/FEC-Linka/rvrita-etsy-reviews" target="_blank">github link</a></p>
                     {/* <p>A responsive UI and optimized UX built by a team of 4 with pixel-perfect CSS clone of original site. Designed using service oriented architecture.</p> */}
                     <p>A full-stack, pixel-perfect implementation of a popular e-commerce site. Built as an exercise to optimize time-to-first-contentful-paint with real-world data and a tiered backend architecture.</p>
                     <p className="small-caps">React Styled-Components CSS HTML Node Express</p>
@@ -182,13 +181,24 @@ class App extends React.Component {
                 </div>
                 <div className="project project-left">
                   <div className="project-image">
-                    <img src="images/blogrl.png" alt="Blogrl" />
+                    <img src="images/codebreakers.png" alt="codebreakers game" />
                   </div>
                   <div className="project-text">
-                    <h3>Blogrl.</h3>
-                    <p className="project-url"><a href="http://www.blogrl.me">blogrl.me</a></p>
-                    <p>A fully-functioning blog written from the ground up with React, Express, and MongoDB. Supports content authoring and built-in visitor activity analytics.</p>
+                    <h3>Codebreakers</h3>
+                    <p className="project-url"><a href="http://www.playcodebreakers.com/" target="_blank">playcodebreakers.com</a></p>
+                    <p>A full-stack implementation of the popular game Codenames, with editable word lists and a hint tracker.</p>
                     <p className="small-caps">Javascript React Node Express MySQL</p>
+                  </div>
+                </div>
+                <div className="project">
+                  <div className="project-image">
+                    <img src="images/camp-builder.png" alt="Sephora Campaign Builder" />
+                  </div>
+                  <div className="project-text">
+                    <h3>Email Campaign Builder</h3>
+                    <p className="project-url"><a href="http://campaignbuilder.rvrita.com/" target="_blank">campaignbuilder.rvrita.com</a></p>
+                    <p>A drag and drop tool for building fully working html email templates. The tool automates building emails for Harmony marketing platform.</p>
+                    <p className="small-caps">Javascript React CSS HTML Node Express</p>
                   </div>
                 </div>
 
@@ -197,19 +207,19 @@ class App extends React.Component {
                 <div className="additional-projects">
                   <div className="project-more">
                     <h3>Watair-bnb</h3>
-                    <p className="project-url"><a href="https://github.com/SDC-Odyssey/rvrita-hosting">github link</a></p>
+                    <p className="project-url"><a href="https://github.com/SDC-Odyssey/rvrita-hosting" target="_blank">github link</a></p>
                     <p>Scaled a vacation rental app with 10M+ records to handle 10,000 RPS at &lt;1% error rate.</p>
                     <p className="small-caps">Node Express PostgreSQL Memcached NGINX</p>
                   </div>
                   <div className="project-more">
                     <h3>Minesweeper</h3>
-                    <p className="project-url"><a href="http://github.com/rvrita">github link</a></p>
+                    <p className="project-url"><a href="https://github.com/rvrita/mini-apps-2" target="_blank">github link</a></p>
                     <p>An implementation of the classic minesweeper game, built with a focus on functional programming style with React and Redux.</p>
                     <p className="small-caps">React Redux HTML CSS</p>
                   </div>
                   <div className="project-more">
                     <h3>Bowling Score Card</h3>
-                    <p className="project-url"><a href="http://github.com/rvrita">github link</a></p>
+                    <p className="project-url"><a href="https://github.com/rvrita/mini-apps-2" target="_blank">github link</a></p>
                     <p>An online bowling score sheet. Supports an unlimited number of players.</p>
                     <p className="small-caps">React Redux HTML CSS</p>
                   </div>

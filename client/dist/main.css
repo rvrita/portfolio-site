@@ -283,9 +283,19 @@ nav li a:active {
   opacity: 100%;
 }
 
-.books {
+a.books {
   color: rgb(147,118,140);
   opacity: 100%;
+}
+
+a.books:hover {
+  color: white;
+  opacity: 100%;
+}
+
+a.books:focus,
+a.books:visited {
+  text-decoration: none;
 }
 
 /* about-me rules end */
@@ -475,6 +485,12 @@ nav li a:active {
 .project-url a {
   display: inline-block;
   font-style: italic;
+  text-decoration: none;
+}
+
+.project-url a:focus,
+.project-url a:visited {
+  text-decoration: none;
 }
 
 .project-url a::after {
