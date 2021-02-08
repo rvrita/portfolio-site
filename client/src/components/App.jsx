@@ -12,20 +12,18 @@ class App extends React.Component {
     return (
       <div>
         {/* Header */}
-        <div className="container-fluid" id="header">
-          <div className="column">
-            <div><img id="profile-image" src="images/m6toned.jpg" width="200" height="200" alt="Rita Rozsavolgyi" /></div>
-            <h1>Rita Rozsavolgyi</h1>
-            <h2>Full Stack Software Engineer</h2>
-            <ul className="list-unstyled list-inline social">
-              <li><a href="https://www.linkedin.com/in/rvrita" target="_blank"><img src="images/linkedin.svg" width="22" /></a></li>
-              <li><a href="https://www.github.com/rvrita" target="_blank"><img src="images/github.svg" width="22" /></a></li>
-              <li><a href="https://www.twitter.com/rvrita" target="_blank"><img src="images/twitter.svg" width="22" /></a></li>
-              <li><a href="https://www.instagram.com/rvrita" target="_blank"><img src="images/insta.svg" width="22" /></a></li>
-              <li><a href="https://www.pinterest.com/rvrita" target="_blank"><img src="images/pinterest.svg" width="22" /></a></li>
-            </ul>
-            <a href="mailto:rvrita@me.com" className="contact">Contact me</a>
-          </div>
+        <div id="header">
+          <div><img id="profile-image" src="images/m6toned.jpg" width="200" height="200" alt="Rita Rozsavolgyi" /></div>
+          <h1>Rita Rozsavolgyi</h1>
+          <h2>Full Stack Software Engineer</h2>
+          <ul className="list-unstyled list-inline social">
+            <li><a href="https://www.linkedin.com/in/rvrita" target="_blank"><img src="images/linkedin.svg" width="22" /></a></li>
+            <li><a href="https://www.github.com/rvrita" target="_blank"><img src="images/github.svg" width="22" /></a></li>
+            <li><a href="https://www.twitter.com/rvrita" target="_blank"><img src="images/twitter.svg" width="22" /></a></li>
+            <li><a href="https://www.instagram.com/rvrita" target="_blank"><img src="images/insta.svg" width="22" /></a></li>
+            <li><a href="https://www.pinterest.com/rvrita" target="_blank"><img src="images/pinterest.svg" width="22" /></a></li>
+          </ul>
+          <a href="mailto:rvrita@me.com" className="contact">Contact me</a>
         </div>
         {/* Navigation */}
         <nav id="nav">
@@ -39,110 +37,100 @@ class App extends React.Component {
           </ul>
         </nav>
         {/* About Me */}
-        <div className="container-fluid" id="about-me">
-          <section class="row">
-            <div class="column about-me-image"></div>
-            <div class="column about-me-description">
-              <h2><span>About Me</span></h2>
-              <p>
-                Hello! I'm Rita, a full stack software engineer based in San Francisco, CA.
-                I love creating things for the web, both designing and coding. While I have over 6 years of experience on various fields of software engineering, my expertise is in React and CSS.
+        <div id="about-me">
+          <div class="about-me-image"></div>
+          <div class="about-me-description">
+            <h2><span>About Me</span></h2>
+            <p>
+              Hello! I'm Rita, a full stack software engineer based in San Francisco, CA.
+              I love creating things for the web, both designing and coding. While I have over 6 years of experience on various fields of software engineering, my expertise is in React and CSS.
             </p>
-              <div class="me-list small-caps">
+            <div class="me-list small-caps">
               coffee-addict · jiu jitsuka<br />
               dog-lover &amp; trainer · vegan foodie<br />
               crazy plant-lady · home designer<br />
               <a href="https://books.google.com/books?uid=115300439068107447274&as_coll=0&source=gbs_lp_bookshelf_list&hl=en&view_type=grid" className="books small-caps" target="_blank">books · books · books →</a><br />
-              </div>
             </div>
-          </section>
+          </div>
         </div>
         {/* Experience */}
         <div className="drop-shadow">
-          <div className="container-fluid" id="experience">
-            <section className="row">
-              <div className="column">
-                <h2><span>Professional Experience</span></h2>
-                <ul className="list-unstyled">
-                  <li>
-                    <h4>Lead UI/UX Developer</h4>
-                    <h5>Sephora, 2019-present, San Francisco</h5>
-                    <p>
-                      Managing end-to-end email campaign development for an audience of 25M+ and accounting for 20% of all digital revenue.<br />
-                      I lead a team of 5 amazing engineers responsible for translating design specs into interactive web pages.
-                      On a typical week, I oversee the launch of 15 campaigns. I also develop single-page JavaScript applications to accelerate HTML composition of email campaigns.
-                    </p>
-                    {/* <p>Managing end-to-end email campaign development for an audience of 23M+ and accounting for 20% of all digital revenue.  Specialized in turning graphic design files into interactive web pages using HTML and CSS, including responsive design coding for both email and web development.</p> */}
-                  </li>
-                  <li>
-                    <h4>UI/UX Developer</h4>
-                    <h5>Sephora, 2014-2019, San Francisco</h5>
-                    <p>Developed email campaigns using HTML, CSS and Freemarker.<br />Programmed rules to serve dynamic content dependent upon user profile settings.<br />Ensured that email functionality worked in a variety of browsers and devices using responsive coding techniques.</p>
-                  </li>
-                  <li>
-                    <h4>UI/UX Developer</h4>
-                    <h5>Netrix, 2012-2014, Budapest</h5>
-                    <p>Built complete websites in HTML and CSS based on Photoshop specs. Coded promotional HTML emails, tested with Litmus to ensure cross client compatibility. Maintained and solved issues with existing sites.</p>
-                  </li>
-                </ul>
-              </div>
-            </section>
+          <div id="experience">
+            <h2><span>Professional Experience</span></h2>
+            <ul className="list-unstyled">
+              <li>
+                <h4>Lead UI/UX Developer</h4>
+                <h5>Sephora, 2019-present, San Francisco</h5>
+                <p>
+                  Managing end-to-end email campaign development for an audience of 25M+ and accounting for 20% of all digital revenue.<br />
+                  I lead a team of 5 amazing engineers responsible for translating design specs into interactive web pages.
+                  On a typical week, I oversee the launch of 15 campaigns. I also develop single-page JavaScript applications to accelerate HTML composition of email campaigns.
+                </p>
+                {/* <p>Managing end-to-end email campaign development for an audience of 23M+ and accounting for 20% of all digital revenue.  Specialized in turning graphic design files into interactive web pages using HTML and CSS, including responsive design coding for both email and web development.</p> */}
+              </li>
+              <li>
+                <h4>UI/UX Developer</h4>
+                <h5>Sephora, 2014-2019, San Francisco</h5>
+                <p>Developed email campaigns using HTML, CSS and Freemarker.<br />Programmed rules to serve dynamic content dependent upon user profile settings.<br />Ensured that email functionality worked in a variety of browsers and devices using responsive coding techniques.</p>
+              </li>
+              <li>
+                <h4>UI/UX Developer</h4>
+                <h5>Netrix, 2012-2014, Budapest</h5>
+                <p>Built complete websites in HTML and CSS based on Photoshop specs. Coded promotional HTML emails, tested with Litmus to ensure cross client compatibility. Maintained and solved issues with existing sites.</p>
+              </li>
+            </ul>
           </div>
         </div>
         {/* Skills */}
-        <div className="container-fluid" id="skills">
-          <section class="row">
-            <div class="column">
-              <h2><span>Technical Skills</span></h2>
-              <div className="skill-lists">
-                <ul>
-                  <li className="small-caps">Frontend</li>
-                  <li>Javascript</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Styled&nbsp;Components</li>
-                  <li>Bootstrap</li>
-                </ul>
-                <ul>
-                  <li className="small-caps">Backend</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>PostgreSQL</li>
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>Mongoose</li>
-                  <li>Restful API dev</li>
-                </ul>
-                <ul>
-                  <li className="small-caps">Tools</li>
-                  <li>AWS</li>
-                  <li>Docker</li>
-                  <li>Git</li>
-                  <li>Webpack</li>
-                  <li>Babel</li>
-                  <li>Ejs</li>
-                  <li>Mustache</li>
-                </ul>
-                <ul>
-                  <li className="small-caps">Testing</li>
-                  <li>Jest</li>
-                  <li>Enzyme</li>
-                  <li>Mocha</li>
-                  <li>Chai</li>
-                  <li>loader.io</li>
-                  <li>k6</li>
-                  <li>New Relic</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+        <div id="skills">
+          <h2><span>Technical Skills</span></h2>
+          <div className="skill-lists">
+            <ul>
+              <li className="small-caps">Frontend</li>
+              <li>Javascript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Styled&nbsp;Components</li>
+              <li>Bootstrap</li>
+            </ul>
+            <ul>
+              <li className="small-caps">Backend</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>Mongoose</li>
+              <li>Restful API dev</li>
+            </ul>
+            <ul>
+              <li className="small-caps">Tools</li>
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>Webpack</li>
+              <li>Babel</li>
+              <li>Ejs</li>
+              <li>Mustache</li>
+            </ul>
+            <ul>
+              <li className="small-caps">Testing</li>
+              <li>Jest</li>
+              <li>Enzyme</li>
+              <li>Mocha</li>
+              <li>Chai</li>
+              <li>loader.io</li>
+              <li>k6</li>
+              <li>New Relic</li>
+            </ul>
+          </div>
         </div>
         {/* Projects */}
         <div className="drop-shadow">
-          <div className="container-fluid" id="projects">
-            <section className="row">
+          <div id="projects">
+            <section>
               <div className="column">
                 <h2><span>Projects</span></h2>
                 <div className="project">
@@ -229,7 +217,7 @@ class App extends React.Component {
           </div>
         </div>
         {/* Footer */}
-        <div className="container-fluid" id="footer">
+        <div id="footer">
           <div className="column">
             <h2><span>Get In Touch</span></h2>
             <ul className="list-unstyled list-inline social">

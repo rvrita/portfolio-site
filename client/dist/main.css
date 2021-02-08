@@ -1,3 +1,21 @@
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline>li {
+  display: inline-block;
+}
+
+.list-inline>li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 /* generic rules start */
 /* :root {
   --primary: #1e90ff;
@@ -13,7 +31,7 @@
       zoom: 0.75;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   html {
       zoom: 0.60;
   }
@@ -36,10 +54,15 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
+  line-height: 1.42857;
 }
 
-h1, h2, h3, h4, nav {
+h1, h2, h3, h4, h5, h6, nav {
   font-family: 'GuardianEgypt';
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -84,10 +107,6 @@ a,a:hover,
 a:visited {
   color: white;
   text-decoration: none;
-}
-
-.container-fluid {
-  padding: 0;
 }
 
 .small-caps {
@@ -188,7 +207,7 @@ a:visited {
 /* navigation rules start */
 
 nav {
-  padding: 10px 0;
+  padding: 10px 20px;
   background-color: #242C46;
   margin: 0 auto;
   position: sticky;
@@ -199,9 +218,7 @@ nav {
 nav ul {
   margin: 0 auto;
   font-size: 1.2em;
-  width: 70%;
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
 }
 
 nav li {
@@ -209,11 +226,16 @@ nav li {
   white-space: nowrap;
 }
 
-nav li a {
+nav li a,
+nav li a:active,
+nav li a:visited {
   padding: 10px 15px;
   cursor: pointer;
-  color: #8f9cca;
   display: inline-block;
+  color: white;
+}
+nav li a:hover {
+  color: aquamarine;
 }
 
 nav ul.list-unstyled.small-caps {
@@ -222,44 +244,19 @@ nav ul.list-unstyled.small-caps {
   opacity: 100;
 }
 
-nav li a:hover,
-nav li a:active {
-  color: aquamarine;
-}
-
 /* nav rules end */
 
 /* about-me rules start */
 
 #about-me {
-  padding-bottom: 70px;
   color: white;
   max-width: 1100px;
-}
-
-#about-me h2 span {
-  color: #fff;
-  background: #cbd0f930;
-}
-
-#about-me .row {
-  padding-top: 80px;
+  padding: 70px 20% 80px;
   display: flex;
-  width: 80%;
-  margin: 0 auto;
 }
-
-@media (max-width: 600px) {
-  #about-me .row {
-    display: block;
-  }
-  .about-me-image {
-    display: none;
-  }
-}
-
 .about-me-image {
-  margin: 40px;
+  margin-top: 40px;
+  margin-right: 80px;
   flex: 2 1;
   /* background: url(images/me.jpg) no-repeat center; */
   background: url(images/desk.jpg) no-repeat center;
@@ -269,11 +266,23 @@ nav li a:active {
   height: min(25vw, 400px);
   box-shadow: 0 0 0 2vw inset #93768c80;
 }
-
 .about-me-description {
   flex: 3 1;
   box-sizing: border-box;
-  margin: 0 40px;
+}
+#about-me h2 span {
+  color: #fff;
+  background: #cbd0f930;
+}
+
+@media (max-width: 600px) {
+  #about-me {
+    display: block;
+    padding: 70px 10% 80px;
+  }
+  .about-me-image {
+    display: none;
+  }
 }
 
 .me-list.small-caps {
@@ -303,11 +312,17 @@ a.books:visited {
 /*  experience rules start */
 
 #experience {
-  padding: 50px 0 150px;
+  padding: 130px 20% 150px;
   clip-path: polygon(95% 5%, 90% 95%, 0 100%, 0 0);
   background-color: #ededed;
   background-image: url(images/bg1.png);
   background-size: 55px 32px;
+}
+@media (max-width: 600px) {
+  #experience {
+    clip-path: polygon(100% 3%, 100% 97%, 0 100%, 0 0);
+    padding: 130px 10% 150px;
+  }
 }
 
 #experience h2 span {
@@ -315,13 +330,7 @@ a.books:visited {
   background: #707EB01f;
 }
 
-#experience .row .column {
-  padding-top: 80px;
-  margin: 0 auto;
-  width: 60%;
-}
-
-#experience .row .column li {
+#experience li {
 	margin-top: 60px;
 }
 
@@ -331,9 +340,14 @@ a.books:visited {
 
 #skills {
   text-align: right;
-  margin: 60px auto;
+  padding: 60px 20%;
   color: white;
-  width: 60%;
+  overflow: hidden; /* debug */
+}
+@media (max-width: 600px) {
+  #skills {
+    padding: 60px 10%;
+  }
 }
 
 #skills h2 span {
@@ -357,19 +371,13 @@ a.books:visited {
 /* projects rules start */
 
 #projects {
-  clip-path: polygon(5% 5%, 100% 0%, 100% 100%, 11% 98%);
+  clip-path: polygon(0% 1%, 100% 0%, 100% 100%, 0% 99%);
   color: #333;
-  padding: 50px 0 150px;
+  padding: 100px 10% 150px;
   background-color: #ededed;
   background-image: url(images/bg1.png);
   background-size: 55px 32px;
   margin-bottom: 60px;
-}
-
-#projects .row .column {
-  padding-top: 80px;
-  margin: 0 auto;
-  width: 60%;
 }
 
 #projects h2 span {
@@ -391,29 +399,20 @@ a.books:visited {
 }
 
 .project {
-  display: flex;
   align-items: center;
   position: relative;
   margin-top: 60px;
   margin-bottom: 90px;
-  margin-right: -60px;
-}
-
-.project-left {
-  flex-direction: row-reverse;
 }
 
 .project-image {
-  flex: 3 1;
   background-color: #93768c;
   background-blend-mode: screen;
-  outline: 1px solid #93768c80;
 }
 
 .project-left .project-image {
   background-color: #706b91;
   background-blend-mode: screen;
-  outline: 1px solid #80769380;
 }
 
 .project-image img {
@@ -437,7 +436,6 @@ a.books:visited {
   background-color: #6a4b6e;
   background: linear-gradient(0deg, #6a4b6e 0%, #48304b 100%);
   padding: 10px 30px;
-  margin-left: -50px;
   z-index: 100;
 }
 
@@ -449,7 +447,45 @@ a.books:visited {
   background-color: #574b6e;
   background: linear-gradient(0deg, #655888 0%, #3b304b 100%);
   margin-left: initial;
-  margin-right: -50px;
+}
+
+/* desktop-only styles for the projects section */
+@media (min-width: 600px) {
+  #projects {
+    clip-path: polygon(5% 3%, 100% 0%, 100% 100%, 11% 98%);
+    padding: 140px 20% 150px;
+  }
+
+  .project {
+    display: flex;
+    margin-right: -60px;
+  }
+  .project-image {
+    flex: 3 1;
+    outline: 1px solid #93768c80;
+  }
+  .project-text {
+    margin-left: -50px;
+  }
+
+  .project-left {
+    flex-direction: row-reverse;
+  }
+  .project-left .project-text {
+    margin-right: -50px;
+  }
+
+  .additional-projects {
+    display: flex;
+    margin-right: -60px;
+  }
+  .additional-projects div:last-child {
+    margin-right: 0;
+  }
+  .project-more {
+    width: 32%;
+    margin-right: 2%;  
+  }
 }
 
 .project-text p,
@@ -507,11 +543,6 @@ a.books:visited {
   width: 100%;
 }
 
-.additional-projects {
-  display: flex;
-  margin-right: -60px;
-}
-
 .additional-projects.row-2 {
   margin-top: 20px;
 }
@@ -522,17 +553,12 @@ a.books:visited {
   background: linear-gradient(0deg, #6a4b6e 0%, #48304b 100%);
   padding: 10px 30px;
   font-size: 10px;
-  width: 32%;
-  margin-right: 2%;
   transition: all 200ms ease 0s;
+  margin-bottom: 20px;
 }
 
 .project-more:hover {
   transform: scale(1.05);
-}
-
-.additional-projects div:last-child {
-  margin-right: 0;
 }
 
 .additional-projects div:nth-child(odd),
