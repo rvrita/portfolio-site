@@ -340,14 +340,8 @@ a.books:visited {
 
 #skills {
   text-align: right;
-  padding: 60px 20%;
+  padding: 60px 15% 60px 10%;
   color: white;
-  overflow: hidden; /* debug */
-}
-@media (max-width: 600px) {
-  #skills {
-    padding: 60px 10%;
-  }
 }
 
 #skills h2 span {
@@ -356,14 +350,28 @@ a.books:visited {
 }
 
 .skill-lists {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .skill-lists ul {
-  display: inline-block;
   list-style-type: none;
-  flex: 1 1;
+  padding: 0;
+  margin: 20px 0 20px 40px;
   line-height: 32px;
+}
+
+.skill-lists li {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  #skills {
+    padding: 60px 10%;
+  }
+  .skill-lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* skills rules end */

@@ -92,7 +92,7 @@ class App extends React.Component {
               <li>CSS3</li>
               <li>React</li>
               <li>Redux</li>
-              <li>Styled&nbsp;Components</li>
+              <li>Styled Components</li>
               <li>Bootstrap</li>
             </ul>
             <ul>
@@ -103,7 +103,7 @@ class App extends React.Component {
               <li>MongoDB</li>
               <li>MySQL</li>
               <li>Mongoose</li>
-              <li>Restful API dev</li>
+              <li>RESTful APIs</li>
             </ul>
             <ul>
               <li className="small-caps">Tools</li>
